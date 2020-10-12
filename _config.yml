@@ -1,58 +1,115 @@
-title: 林德熙
-description: Windows 10 App Developer
-author: lindexi
-post_author: 林德熙
-logo: /img/avatar.png
-github: https://github.com/lindexi
-about: Windows 10 App Developer
-mail: "lindexi_gd@outlook.com"
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-baseurl: ""
-url: "https://blog.lindexi.com"
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: MM
+email:
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+twitter_username: username
+github_username: username
+minimal_mistakes_skin: default
+search: true
 
-allowsearch: false
-
-analytics:
-  google: UA-110214503-1
-disqus:
-  name: lindexi
-
-share:
-  twitter_username: lindexi_gd
-
-
-enableTags: true
-tagarray: []
-
-excerpt_separator: "<!--more-->"
-paginate: 35
-per_page: 60
-paginate_path: "/blog/page:num/"
+# Build settings
 markdown: kramdown
-kramdown:
-   input: GFM
-   hard_wrap: false
-   math_engine: mathjax
-gems: [jekyll-paginate, jekyll-gist]
+remote_theme: mmistakes/minimal-mistakes
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-# Content Collection
-collections:
-  articles:
-    output: true
+include:
+  - _pages
 
-# Content Template
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+author:
+  name   : "First Lastname"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "My awesome biography constrained to a sentence or two goes here."
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/"
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/"
+
 defaults:
+  # _posts
   - scope:
-      path: "_posts"
-      type: "posts"
+      path: ""
+      type: posts
     values:
-      layout: "post"
-      author: "林德熙"
-      permalink: "/post/:title.html"
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
   - scope:
-      path: "_articles"
-      type: "articles"
+      path: "_pages"
+      type: pages
     values:
-      layout: "post"
-      author: "林德熙"
-      permalink: "/article/:title.html"
+      layout: single
+      author_profile: true
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/

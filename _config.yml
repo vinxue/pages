@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
-baseurl: ""
-url: "https://vinxue.github.io/pages/"
+#baseurl: ""
+#url: "https://vinxue.github.io/pages/"
 
 # THEME-SPECIFIC CONFIGURATION
 title: Type on Strap                                    # site's title

@@ -41,7 +41,11 @@ Usually, we need to dump ACPI table from BIOS for debugging. There is the method
      -n <Signature>      Get table via a name/signature
      -x                  Do not use but dump XSDT
      -x -x               Do not use or dump XSDT
+
+   Invocation without parameters dumps all available tables
+   Multiple mixed instances of -a, -f, and -n are supported
    ```
+
 1. Disassemble or decode binary ACPI table to file (*.dsl) by [iASL](https://acpica.org/downloads/binary-tools) tool on Windows.
 
    ```

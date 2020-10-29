@@ -5,7 +5,7 @@
 # THEME-SPECIFIC CONFIGURATION
 title: Gavin Xue's Blog                                 # site's title
 description: "Attitude is Altitude"                     # used by search engines
-avatar: assets/img/triangle.png                         # Empty for no avatar in navbar
+avatar: https://avatars3.githubusercontent.com/u/48240436  # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
 # Header and footer text

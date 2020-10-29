@@ -1,8 +1,8 @@
 ---
 layout: post
 title: ACPI dump and decode on UEFI Shell
-feature-img: "assets/img/pexels/computer2.webp"
-thumbnail: "assets/img/pexels/computer2.webp"
+feature-img: "assets/img/pexels/computer2.jpg"
+thumbnail: "assets/img/pexels/computer2.jpg"
 author: vinxue
 tags: [UEFI]
 ---
